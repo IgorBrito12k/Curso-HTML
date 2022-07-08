@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+
+<body>
+    <h1>Formulário aqui</h1>
+    <br>
+    <hr>
+    <form>
+
+        <!--label é a legenda do formulário-->
+        <label for="campo-nome">Nome:</label>
+        <!--Campo para inserir dados do tipo texto.-->
+        <input id="campo-nome" type="text" placeholder="Digite seu nome aqui" required>
+        <!--placeholder serve para deixar a marca d'agua dentro do formulári. Sempre que 
+    eu clicar no nome ele vai me levar para o formulário graças ao id e o for-->
+
+        <br><br>
+
+        <label for="campo-sobrenome">Sobrenome:</label>
+        <input id="campo-sobrenome" type="text" placeholder="Digite seu sobrenome aqui" required>
+        <!-- required é para tornar o campo obrigatório -->
+        <br><br>
+
+        <label for="campo-senha">Senha:</label>
+        <input id="campo-senha" type="password" placeholder="Digite uma senha" required>
+
+        <br><br>
+
+        <label for="campo-email">Email:</label>
+        <input id="campo-email" type="email" placeholder="Digite seu email" required>
+
+        <br><br>
+        <h2>Animal de estimação</h2>
+        <!-- input de bolinha sem multipla escolha-->
+        <input type="radio" name="animal" id="dog" value="cachorro">
+        <label for="dog">Cachorro</label>
+
+        <br><br>
+
+        <input type="radio" name="animal" id="cat" value="gato">
+        <label for="cat">Gato</label>
+
+        <br><br>
+
+        <input type="radio" name="animal" id="bird" value="passarinho">
+        <label for="bird">Passarinho</label>
+
+        <br><br>
+
+        <h2>O que você tem em casa</h2>
+        <!-- input de quadradinho com multipla escolha-->
+        <input id="iten1" type="checkbox" name="iten1" value="TV">
+        <label for="iten1">TV</label>
+
+        <br><br>
+
+        <input id="iten2" type="checkbox" name="iten2" value="Geladeira">
+        <label for="iten2">Geladeira</label>
+
+        <br><br>
+
+        <input id="iten3" type="checkbox" name="iten3" value="Computador">
+        <label for="iten3">Computador</label>
+
+        <br><br>
+
+        <h2>Escolha uma cor</h2>
+
+        <select name="cores">
+            <br><br>
+            <!-- opção para selecionar cor fica desabilitada e ja selecionada -->
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="laranja">Laranja</option>
+            <option value="verde">Verde</option>
+            <option value="roxo">Roxo</option>
+        </select>
+        <br>
+        <h2>Digite sua mensagem:</h2>
+        <!-- area para escrever um texto -->
+        <textarea name="mensagem" placeholder="digite aqui sua mensagem de amor" cols="35" rows="15"></textarea>
+        <br><br>
+        <!-- botao para enviar o formulário -->
+        <input type="submit" value="Enviar Formulário">
+        <!-- poderia ser o button também -->
+        <button>Clique aqui</button>
+
+    </form>
+    <br>
+    <hr>
+    <br><br>
+    <a href="index.html">voltar para a tela principal</a>
+</body>
+
+</html>
